@@ -2,6 +2,8 @@
 
 An overhead Intel RealSense RGB-D camera tracks an object on the table, and an SO-101 arm pans its base to follow it. A wrist-mounted RGB camera shows the gripper's aim line and where it hits the object or the table.
 
+This implementation is based on the paper [AimBot: A Simple Auxiliary Visual Cue to Enhance Spatial Awareness of Visuomotor Policies](https://arxiv.org/abs/2508.08113) (Dai et al., CoRL 2025). This covers only the hardware setup, calibration and the aim-line visualization on the wrist view. It does not include training or running a VLA policy.
+
 Five calibration steps link the two cameras, the table and the arm. The final command, `aimbot-wrist`, uses their results.
 
 ## Hardware
