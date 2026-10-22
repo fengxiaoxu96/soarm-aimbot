@@ -1,0 +1,40 @@
+source_frame: overhead
+destination_frame: world
+world_origin: marker center
+world_x: printed +X arrow, on the table
+world_y: printed +Y arrow, on the table
+world_z: up, out of the marker toward the camera
+dictionary: DICT_APRILTAG_36h11
+marker_id: 0
+marker_size_m: 0.1375
+intrinsics: calib/overhead_intrinsics.yaml
+samples: 30
+reprojection_error_px: 0.054643530202699214
+translation_std_m:
+- 0.00043188579127487886
+- 0.0005162766496581708
+- 0.0003244110406176592
+rotation_jitter_deg: 0.06521727861685075
+table_z_m: -0.004558939936314177
+saved_at: '2026-10-06T12:57:16'
+T_world_overhead:
+- - 0.9957848546858139
+  - -0.03509463422107631
+  - -0.08474013114954122
+  - 0.15305610092933775
+- - -0.03576815203694478
+  - -0.9993393487542552
+  - -0.0064424631378789425
+  - 0.09837749748634012
+- - -0.08445805158902607
+  - 0.009446305114158926
+  - -0.9963822583935722
+  - 0.5022644443376441
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+translation_m:
+- 0.15305610092933775
+- 0.09837749748634012
+- 0.5022644443376441

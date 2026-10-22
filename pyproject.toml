@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soarm-aimbot"
+version = "0.1.0"
+description = "Overhead RGB-D object tracking and a wrist-camera aim overlay for the SO-101 arm"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "opencv-python>=4.8",
+    "PyYAML>=6.0",
+    "pyrealsense2>=2.54",
+    "pyserial>=3.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+aimbot-step01 = "soarm_aimbot.steps.step01_overhead_align:main"
+aimbot-step02 = "soarm_aimbot.steps.step02_wrist_intrinsics:main"
+aimbot-step03 = "soarm_aimbot.steps.step03_table_frame:main"
+aimbot-step04 = "soarm_aimbot.steps.step04_base_frame:main"
+aimbot-step05 = "soarm_aimbot.steps.step05_wrist_handeye:main"
+aimbot-wrist = "soarm_aimbot.steps.aimbot_wrist:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

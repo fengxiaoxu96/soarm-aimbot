@@ -1,0 +1,27 @@
+camera: overhead
+frame: overhead
+width: 848
+height: 480
+fx: 429.62970428180853
+fy: 429.2680452249414
+cx: 427.50118076982386
+cy: 244.15105768694252
+distortion:
+- -0.05218361295962113
+- 0.05682731750692317
+- 5.6937434765749126e-05
+- -0.0006533219200855642
+- -0.020792815736732893
+depth_scale_m: 0.0010000000474974513
+depth_unit: meter
+alignment: depth_to_color
+source: checkerboard
+device_name: RealSense D455
+serial: '248622300865'
+fps: 30
+saved_at: '2026-10-05T16:54:46'
+valid_depth_fraction: 0.7716
+checkerboard_cols: 9
+checkerboard_rows: 6
+checkerboard_square_m: 0.02
+views: 12

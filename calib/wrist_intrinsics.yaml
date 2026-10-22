@@ -1,0 +1,107 @@
+camera: wrist
+frame: wrist
+model: brown
+width: 1280
+height: 720
+fx: 518.1844899786182
+fy: 515.3453626514481
+cx: 675.7636898807089
+cy: 342.2994532164751
+distortion:
+- 0.05974255206485593
+- -0.0906259632488149
+- -0.0003911705407929846
+- 0.0003522666161951392
+- 0.023898251752041435
+undistorted_fx: 497.93521397018304
+undistorted_fy: 520.5660089176391
+undistorted_cx: 681.8666339536263
+undistorted_cy: 341.8273563006294
+alignment: none
+source: checkerboard
+device_index: 10
+device_path: /dev/video10
+focus: null
+autofocus_disabled: false
+checkerboard_cols: 9
+checkerboard_rows: 6
+checkerboard_square_m: 0.02
+views: 20
+holdout_views: 4
+reprojection_rms_px: 0.285616912531841
+calibration_mean_error_px: 0.22925663489367734
+holdout_mean_error_px: 0.20826177077314248
+threshold_px: 0.5
+accepted: true
+fisheye_check_cond: null
+view_errors_px:
+- index: 0
+  role: calibration
+  mean_error_px: 0.19937864833470315
+- index: 1
+  role: calibration
+  mean_error_px: 0.21136972411225483
+- index: 2
+  role: holdout
+  mean_error_px: 0.2921016105672376
+- index: 3
+  role: calibration
+  mean_error_px: 0.21662815740078345
+- index: 4
+  role: calibration
+  mean_error_px: 0.2542100134264193
+- index: 5
+  role: calibration
+  mean_error_px: 0.38136863512907776
+- index: 6
+  role: calibration
+  mean_error_px: 0.25237866322561486
+- index: 7
+  role: holdout
+  mean_error_px: 0.15406158845695334
+- index: 8
+  role: calibration
+  mean_error_px: 0.3094365120404767
+- index: 9
+  role: calibration
+  mean_error_px: 0.18933926479259022
+- index: 10
+  role: calibration
+  mean_error_px: 0.2940461851072071
+- index: 11
+  role: calibration
+  mean_error_px: 0.1941705772584551
+- index: 12
+  role: holdout
+  mean_error_px: 0.1787591407952921
+- index: 13
+  role: calibration
+  mean_error_px: 0.13274388160260034
+- index: 14
+  role: calibration
+  mean_error_px: 0.21579392076132
+- index: 15
+  role: calibration
+  mean_error_px: 0.2142784254095485
+- index: 16
+  role: calibration
+  mean_error_px: 0.19876670245985717
+- index: 17
+  role: holdout
+  mean_error_px: 0.20812474327308692
+- index: 18
+  role: calibration
+  mean_error_px: 0.29568955921237455
+- index: 19
+  role: calibration
+  mean_error_px: 0.10850728802555443
+example_ray:
+  pixel:
+  - 675.7636898807089
+  - 342.2994532164751
+  direction_unit:
+  - 0.0
+  - 0.0
+  - 1.0
+  axes: X right, Y down, Z forward
+saved_at: '2026-10-06T10:14:44'

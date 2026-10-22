@@ -1,0 +1,22 @@
+ticks_per_revolution: 4096
+joints:
+  shoulder_pan:
+    id: 1
+    tick_at_urdf_zero: 2113
+    sign: 1
+  shoulder_lift:
+    id: 2
+    tick_at_urdf_zero: 2059
+    sign: 1
+  elbow_flex:
+    id: 3
+    tick_at_urdf_zero: 1980
+    sign: 1
+  wrist_flex:
+    id: 4
+    tick_at_urdf_zero: 2037
+    sign: 1
+  wrist_roll:
+    id: 5
+    tick_at_urdf_zero: 3043
+    sign: 1

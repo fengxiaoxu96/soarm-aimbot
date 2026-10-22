@@ -1,0 +1,59 @@
+root_link: base_link
+tip_link: gripper_link
+urdf: assets/so101/so101_new_calib.urdf
+intrinsics: calib/wrist_intrinsics.yaml
+dictionary: DICT_APRILTAG_36h11
+marker_id: 3
+marker_size_m: 0.0505
+method: andreff
+checked_against: park
+solver_translation_disagreement_m: 0.0001570249137450733
+solver_rotation_disagreement_deg: 0.10755984117972409
+pair_count: 120
+sample_count: 16
+holdout_count: 4
+holdout_translation_error_m:
+- 0.006620972956417336
+- 0.0032964090077074906
+- 0.0023502917603672236
+- 0.004127266411065689
+holdout_reprojection_px:
+- 19.935582585005843
+- 7.429318986612557
+- 5.766968136780653
+- 10.03132450525608
+T_gripper_wrist:
+- - 0.9973710639781099
+  - -0.013400742441858203
+  - -0.07121362819840463
+  - -0.0003947135164151761
+- - -0.05185195681255492
+  - -0.8184839945702787
+  - -0.5721846950128859
+  - 0.05323925569878026
+- - -0.05061951514863202
+  - 0.5743730240308014
+  - -0.817027107231963
+  - -0.06828125124892813
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+camera_origin_in_gripper_m:
+- -0.0003947135164151761
+- 0.05323925569878026
+- -0.06828125124892813
+optical_axis_in_gripper:
+- -0.07121362819840463
+- -0.5721846950128859
+- -0.817027107231963
+image_right_in_gripper:
+- 0.9973710639781099
+- -0.05185195681255492
+- -0.05061951514863202
+image_down_in_gripper:
+- -0.013400742441858203
+- -0.8184839945702787
+- 0.5743730240308014
+optical_axis_nearest: gripper -Z
+saved_at: '2026-10-13T16:02:54'
