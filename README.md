@@ -1,5 +1,18 @@
 # soarm-aimbot
 
+<div align="center">
+  <table>
+    <tr>
+      <th>Overhead</th>
+      <th>Wrist</th>
+    </tr>
+    <tr>
+      <td><img src="docs/visual/so101_pickandplace_image.png" alt="Overhead camera view of the SO-101 arm, the red cube and the bin" height="260"></td>
+      <td><img src="docs/visual/video_480.gif" alt="Wrist camera view with the aim line following the red cube (6x speed)" height="260"></td>
+    </tr>
+  </table>
+</div>
+
 An overhead Intel RealSense RGB-D camera tracks an object on the table, and an SO-101 arm pans its base to follow it. A wrist-mounted RGB camera shows the gripper's aim line and where it hits the object or the table.
 
 This implementation is based on the paper [AimBot: A Simple Auxiliary Visual Cue to Enhance Spatial Awareness of Visuomotor Policies](https://arxiv.org/abs/2508.08113) (Dai et al., CoRL 2025). This covers only the hardware setup, calibration and the aim-line visualization on the wrist view. It does not include training or running a VLA policy.
@@ -73,13 +86,13 @@ All commands run from the repository root. They read and write `calib/` and `out
 | `src/soarm_aimbot/steps/` | One runnable command per file. Steps do not import each other |
 | `assets/so101/` | Official SO-101 URDF (`so101_new_calib.urdf`). Joint zero is the middle of the travel |
 | `calib/` | Calibration results written by the steps and read by later ones |
-| `docs/` | Detailed instructions for each step |
+| `docs/` | Detailed instructions for each step. `docs/visual/` holds the README images |
 | `tests/` | Pytest suite. It runs without cameras or servos |
 | `output/` | Images, samples, videos and logs from each run (git-ignored) |
 
 ## Coordinate frames
 
-\(T_{a \leftarrow b}\), stored as `T_a_b`, maps points in frame b to frame a.
+$T_{a \leftarrow b}$, stored as `T_a_b`, maps points in frame b to frame a.
 
 | Frame | Meaning |
 | --- | --- |
